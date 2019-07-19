@@ -1,0 +1,13 @@
+<h3>Ngswitch demo</h3>
+
+<button class="btn btn-primary" (click)="setChoice(1)">Button 1</button>
+<button class="btn btn-primary" (click)="setChoice(2)">Button 2</button>
+<button class="btn btn-primary" (click)="setChoice(3)">Button 3</button>
+<button class="btn btn-primary" (click)="setChoice(4)">Button 4</button>
+
+<div class="card-body" [ngSwitch]="choice">
+  <div *ngSwitchCase="1">this is div 1</div>
+  <div *ngSwitchCase="2">this is div 2</div>
+  <div *ngSwitchCase="3">this is div 3</div>
+  <div *ngSwitchCase="4">this is div 4</div>
+</div>
